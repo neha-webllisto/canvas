@@ -1,0 +1,358 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px' ">Click Me!</button>
+
+
+<p id="demo2">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='none' ">Click Me!</button>
+
+
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="demo3" style="display: none;">Hello JavaScript!</p>
+<button type="button" onclick="document.getElementById('demo3').style.display='block' ">Click Me!</button>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Examples</title>
+
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById('demo4').innerHTML='Paragraph Changed';
+		}
+	</script>
+
+</head>
+<body>
+	<h1>JavaScript in Head</h1>
+	<p id="demo4">A Paragraph</p>
+	<button id="submit" type="button" onclick="myFunction()">Click Me!</button>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<h1>A Web Page</h1>
+	<p id="demo5">A Paragraph</p>
+	<button type="button" onclick="myFunction()">Click Me!</button>
+
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById('demo5').innerHTML='Paragraph Changed';
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<h2>Window alert</h2>
+	<script>
+window.alert(5 + 6);
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<h2>JavaScript statements are seperated by semicolons.</h2>
+	<p id="demo6"></p>
+	<script type="text/javascript">
+		var a, b, c;
+		a=5;
+		b=6;
+		c=a+b;
+		document.getElementById('demo6').innerHTML=c;
+	</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<h2>The var keyword creates variables</h2>
+	<p id="demo7"></p>
+	<script type="text/javascript">
+		var x, y;
+		x = 5 + 6;
+		y = x * 10;
+		document.getElementById('demo7').innerHTML = y;
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h2>JavaScript Variables</h2>
+	<p id="demo8"></p>
+	<script type="text/javascript">
+		var price1 = 5;
+		var price2 = 6;
+		var total = price1 + price2;
+		document.getElementById('demo8').innerHTML = "The total is : " +total;
+	</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h2>JavaScript Variables</h2>
+	<p>The result of adding "5" + 2 + 3:</p>
+	<p id="demo9"></p>
+	<script type="text/javascript">
+		x = "5" + 2 + 3;
+		document.getElementById("demo9").innerHTML = x;
+	</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+	<h2>JavaScript Operators</h2>
+	<p>The assignment operator += can concatenate strings.</p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<script type="text/javascript">
+		txt1 = "What a ";
+		txt2 = "nice day";
+		txt1 += txt2;
+		document.getElementById("demo10").innerHTML = txt1 +" "+ txt2;
+		document.getElementById("demo11").innerHTML = txt1;
+	</script>
+</body>
+</html> -->
+
+<!-- <button onclick="displayDate()">The time is?</button>
+<script type="text/javascript">
+	function displayDate(){
+		document.getElementById("demo12").innerHTML = Date();
+	}
+</script>
+<p id="demo12"></p> -->
+
+
+<!-- <p id="demo"></p>
+<script type="text/javascript">
+	var txt = "ffhgghghgyfsbhhuhuhfvjsdjixbcnxjhjcchhnbxnbnb";
+	document.getElementById("demo").innerHTML = txt.length;
+</script> -->
+
+
+<!-- <p id="demo"></p>
+<script type="text/javascript">
+	var str = "Please locate where 'locate' occurs!.";
+	var pos = str.indexOf("locate",15);
+	document.getElementById("demo").innerHTML = pos;
+</script> -->
+
+
+<!-- <p id="demo"></p>
+<script type="text/javascript">
+	var txt1 = "Hello";
+	var txt2 = "World";
+	var txt3 = txt1.concat(" ",txt2);
+	document.getElementById("demo").innerHTML = txt3;
+</script> -->
+
+
+<!-- <button onclick="myFunction()">Try it</button>
+<script type="text/javascript">
+	function myFunction(){
+		var str = "		Hello World		";
+		alert(str.trim());
+	}
+</script> -->
+
+
+<!-- <p id="demo"></p>
+<script type="text/javascript">
+	document.getElementById("demo").innerHTML = 100 / "Apple";
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	var fruits, text, fLen, i;
+	fruits = ["Banana", "Mango", "Apple", "Orange", "Cherry", "Pineapple"]
+	fLen = fruits.length;
+	
+	text = "<ul>";
+	for (i=0; i<fLen; i++){
+		text += "<li>" + fruits[i] + "</li>";
+	}
+	text += "</ul";
+
+	document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<!-- <p id="demo"></p>
+<p>This is forEach loop example.</p>
+<script>
+	var fruits, text;
+	fruits = ["Banana", "Mango", "Apple", "Orange", "Cherry", "Pineapple"];
+	text = "<ul>";
+	fruits.forEach(myFunction);
+	text += "</ul>";
+
+	document.getElementById("demo").innerHTML = text;
+
+	function myFunction(value){
+		text += "<li>" + value + "</li>";
+	}
+</script> -->
+
+
+<!-- <p id="demo"></p>
+<button onclick="myFunction()">Try it</button>
+<script>
+	var fruits = ["Banana", "Orange", "Mango", "Cherry", "Apple"];
+	function myFunction(){
+		fruits.push("Lemon");
+		document.getElementById("demo").innerHTML = fruits;
+	}
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	var fruits, fLen, text, i;
+	fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fruits[6] = "Lemon";
+
+	fLen = fruits.length;
+	text = "";
+	for(i=0; i<fLen; i++){
+		text += fruits[i] + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits.toString();
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+	var fruits = ["Banana", "Apple", "Mango", "Orange"];
+	document.getElementById("demo").innerHTML = fruits.join("*");
+</script> -->
+
+
+<!-- <p id="demo1"></p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo2"></p>
+<script>
+	var fruits = ["Banana", "Mango","Apple", "Orange"];
+	document.getElementById("demo1").innerHTML = fruits;
+	function myFunction(){
+		fruits.splice(2, 0, "Lemon", "Kiwi");
+		document.getElementById("demo2").innerHTML = fruits;
+	}
+</script> -->
+
+
+<!-- <p>The lowest number is <span id="demo1"></span>.</p>
+<p>The highest number is <span id="demo2"></span>.</p>
+
+<script>
+	var points = [40, 100, 1, 5, 25, 10];
+	points.sort(function(a, b){return a-b});
+	document.getElementById("demo1").innerHTML = points[0];
+	document.getElementById("demo2").innerHTML = points[points.length-1];
+</script> -->
+
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits;
+	function myFunction(){
+		fruits.sort();
+		document.getElementById("demo").innerHTML = fruits;
+	}
+</script> -->
+
+
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits;
+	function myFunction(){
+		fruits.sort();
+		fruits.reverse();
+		document.getElementById("demo").innerHTML = fruits;
+	}
+</script> -->
+
+
+<!-- <p id="demo"></p>
+<script>
+	var number1 = [45,4,9,16,25];
+	var number2 = number1.map(myFunction);
+	document.getElementById("demo").innerHTML = number2;
+	function myFunction(value){
+		return value * 2;
+	}
+</script> -->
+
+
+<!-- <p id="demo"></p>
+<script>
+	var number1 = [45,4,9,16,25];
+	var number2 = number1.filter(myFunction);
+	document.getElementById("demo").innerHTML = number2;
+	function myFunction(value){
+		return value > 18;
+	}
+</script> -->
+
+<p id="demo"></p>
+<script>
+	var number1 = [45,26,30,12,78];
+	var number2 = number1.reduce(myFunction);
+	document.getElementById("demo").innerHTML = number2;
+	function myFunction(total, value){
+		return total + value;
+	}
+</script>

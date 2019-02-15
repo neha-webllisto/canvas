@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<img id="image" src="/static/image/rose.jpg" width="494px" height="340px" style="display: none;">
+
+	<canvas id="myCanvas" width="515" height="360" style="border: 1px solid #d3d3d3;">
+		</canvas>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			var img = document.getElementById("image");
+			ctx.drawImage(img, 10 , 10);
+		};
+	</script>
+</body>
+</html>

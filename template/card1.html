@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<img id="image" src="/static/image/card1.jpg" width="347px" height="450px" style="display: none;">
+	<img id="image1" src="/static/image/ganesh.png" width="77px" height="100px" style="display: none;">
+
+	<canvas id="myCanvas" width="347" height="450" style="border: 1px solid #d3d3d3;">
+		</canvas>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			var img = document.getElementById("image");
+			var img1 = document.getElementById("image1");
+	
+			ctx.drawImage(img, 0 , 0);
+			ctx.drawImage(img1, 130, 45);
+			
+			ctx.font = "15px Times new roman"
+			ctx.fillStyle = "white"
+			ctx.fillText("|| Shree Ganeshay Nmah ||",95, 40)
+			
+			ctx.font = "20px Hand Writing1"
+			ctx.fillStyle = "yellow"
+			ctx.fillText("𝓌𝑒𝒹𝓈", 140, 180)
+			ctx.font = "30px Hand Writing1"
+			ctx.fillStyle = "yellow"
+			ctx.fillText("𝐵𝓇𝒾𝒹𝑒", 40, 180)
+			ctx.fillText("𝒢𝓇𝑜𝑜𝓂", 200, 180)
+
+
+			ctx.fillStyle = 'white'
+			ctx.font = '26px Hand Writing1'
+			ctx.fillText("|| 𝒲𝑒𝒹𝒹𝒾𝓃𝑔 𝐼𝓃𝓋𝒾𝓉𝒶𝓉𝒾𝑜𝓃 ||", 50, 220)
+			ctx.fillStyle = '#a6ff4d'
+			ctx.font = '18px Hand Writing1'
+			ctx.fillText("𝒟𝒶𝓎, 𝑀𝑜𝓃𝓉𝒽 𝒹𝒶𝓉𝑒, 𝒴𝑒𝒶𝓇", 70, 250)
+			ctx.fillStyle = "yellow"
+			ctx.font = '20px Hand Writing1'
+			ctx.fillText("𝓣𝓱𝓮 𝓱𝓸𝓷𝓸𝓻 𝓸𝓯 𝔂𝓸𝓾𝓻 𝓹𝓻𝓮𝓼𝓮𝓷𝓬𝓮 𝓲𝓼", 50, 280)
+			ctx.fillText("𝓻𝓮𝓺𝓾𝓮𝓼𝓽𝓮𝓭 𝓪𝓽 𝓽𝓱𝓮 𝔀𝓮𝓭𝓭𝓲𝓷𝓰.", 60, 310)
+
+			ctx.font = "22px"
+			ctx.fillStyle = "white"
+			ctx.fillText("𝒱𝑒𝓃𝓊𝑒",145, 340)
+
+			ctx.beginPath();
+			ctx.lineWidth = 2;
+			ctx.lineCap = "square"; // line shape
+			ctx.moveTo(50, 335);
+			ctx.lineTo( 135, 335);
+			ctx.strokeStyle = "white"
+			ctx.stroke();
+
+			ctx.moveTo(210, 335);
+			ctx.lineTo( 300, 335);
+			ctx.strokeStyle = "white"
+			ctx.stroke();
+
+			ctx.font = "22px"
+			ctx.textAlign = "center";
+			ctx.fillStyle = "yellow"
+			ctx.fillText("𝒜𝒹𝒹𝓇𝑒𝓈𝓈",170, 365)
+			ctx.fillText("𝒜𝒹𝒹𝓇𝑒𝓈𝓈",170, 390)
+			ctx.fillText("𝒞𝒾𝓉𝓎, (𝒮𝓉𝒶𝓉𝑒)",175, 415)
+
+		};
+	</script>
+</body>
+</html>

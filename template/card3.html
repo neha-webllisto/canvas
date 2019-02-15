@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<img id="image" src="/static/image/card2.jpg" width="1300px" height="1082px" style="display: none;">
+	<img id="heart" src="/static/image/heart.png" style="display: none;">
+	
+	<canvas id="myCanvas" width="1300" height="850" style="border: 1px solid #d3d3d3;">
+		</canvas>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			var img = document.getElementById("image");
+			var img1 = document.getElementById("heart");
+			
+			ctx.drawImage(img, 0 , 0, 1300, 850);
+			ctx.drawImage(img1, 930 , 360, 170, 150);
+			
+			ctx.font = "90px TimesNewRoman"
+			ctx.textAlign = "center"
+			ctx.fillStyle = "White"
+			ctx.fillText("𝒲𝑒𝒹𝒹𝒾𝓃𝑔 𝐼𝓃𝓋𝒾𝓉𝒶𝓉𝒾𝑜𝓃", 680, 140);
+
+			ctx.beginPath();
+			ctx.lineWidth = 4;
+			ctx.lineCap = "square"; // line shape
+			ctx.moveTo(1035, 150);
+			ctx.lineTo( 340, 150);
+			ctx.strokeStyle = "white"
+			ctx.stroke();
+
+			ctx.font = "65px TimesNewRoman"
+			ctx.textAlign = "left"
+			ctx.fillStyle = "#660000"
+			// For Bride
+			ctx.fillText("𝐵𝓇𝒾𝒹𝑒 𝓃𝒶𝓂𝑒", 790, 340);
+			ctx.fillText("𝒢𝓇𝑜𝑜𝓂 𝓃𝒶𝓂𝑒", 750, 530);
+	
+			ctx.font = "40px TimesNewRoman"
+			ctx.fillText("𝒲𝑒𝒹𝓈", 970, 435);
+
+			ctx.textAlign = "right"
+			ctx.font = "60px TimesNewRoman"
+			ctx.fillStyle = "White"
+			ctx.fillText("💞 𝒮𝒶𝓋𝑒 𝓉𝒽𝑒 𝒹𝒶𝓉𝑒 💞 ", 620, 320);
+
+			ctx.beginPath();
+			ctx.lineWidth = 3;
+			ctx.lineCap = "square"; // line shape
+			ctx.moveTo(510, 330);
+			ctx.lineTo( 180, 330);
+			ctx.strokeStyle = "white"
+			ctx.stroke();
+
+			ctx.textAlign = "right"
+			ctx.font = "35px TimesNewRoman"
+			ctx.fillText("𝒟𝒶𝓎, 𝑀𝑜𝓃𝓉𝒽 𝒹𝒶𝓉𝑒, 𝒴𝑒𝒶𝓇", 500, 380);
+
+			ctx.font = "44px TimesNewRoman"
+			ctx.fillText("𝒯𝒽𝑒 𝒽𝑜𝓃𝑜𝓇 𝑜𝒻 𝓎𝑜𝓊𝓇 𝓅𝓇𝑒𝓈𝑒𝓃𝒸𝑒", 545, 475);
+			ctx.fillText("𝒾𝓈 𝓇𝑒𝓆𝓊𝑒𝓈𝓉𝑒𝒹 𝒶𝓉 𝓉𝒽𝑒 𝒲𝑒𝒹𝒹𝒾𝓃𝑔.", 545, 535);
+
+
+			ctx.font = "60px TimesNewRoman"
+			ctx.fillText("𝒱𝑒𝓃𝓊𝑒", 400, 640);
+
+			ctx.beginPath();
+			ctx.lineWidth = 3;
+			ctx.lineCap = "square"; // line shape
+			ctx.moveTo(400, 650);
+			ctx.lineTo( 250, 650);
+			ctx.strokeStyle = "white"
+			ctx.stroke();
+
+			ctx.textAlign = "right"
+			ctx.font = "40px TimesNewRoman"
+			ctx.fillText("𝒜𝒹𝒹𝓇𝑒𝓈𝓈", 180, 710);
+			
+		};
+	</script>
+</body>
+</html>

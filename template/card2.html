@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<img id="image" src="/static/image/card.jpg" width="1300px" height="1082px" style="display: none;">
+	<img id="bride" src="/static/image/bride.jpg" style="display: none;">
+	<img id="groom" src="/static/image/groom.jpg" style="display: none;">
+	<img id="heart" src="/static/image/heart.png" style="display: none;">
+	
+	<canvas id="myCanvas" width="900" height="750" style="border: 1px solid #d3d3d3;">
+		</canvas>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			var img = document.getElementById("image");
+			// For Groom
+			var img1 = document.getElementById("groom");
+			var img2 = document.getElementById("bride");
+			// For Bride
+			//var img1 = document.getElementById("bride");
+			//var img2 = document.getElementById("groom");
+			var img3 = document.getElementById("heart");
+
+			ctx.drawImage(img, 0 , 0, 900, 850);
+			ctx.drawImage(img1, 150 , 220, 150, 150);
+			ctx.drawImage(img2, 600 , 220, 150, 150);
+			ctx.drawImage(img3, 370 , 220, 170, 160);
+
+			ctx.textAlign = "center"
+			ctx.fillStyle = "#990000"
+			ctx.font = "30px TimesNewRoman"
+			ctx.fillText("𝒢𝓇𝑜𝑜𝓂 𝓃𝒶𝓂𝑒", 230, 400);
+			ctx.fillText("𝐵𝓇𝒾𝒹𝑒 𝓃𝒶𝓂𝑒", 670, 400);
+			
+			ctx.font = "65px TimesNewRoman"
+			ctx.textAlign = "center"
+			ctx.fillStyle = "#990000"
+			ctx.fillText("𝒲𝑒𝒹𝒹𝒾𝓃𝑔 𝐼𝓃𝓋𝒾𝓉𝒶𝓉𝒾𝑜𝓃", 450, 210);
+			
+			ctx.font = "40px TimesNewRoman"
+			ctx.fillText("𝒲𝑒𝒹𝓈", 455, 300);
+
+			ctx.font = "50px TimesNewRoman"
+			ctx.fillText("💞 𝒮𝒶𝓋𝑒 𝓉𝒽𝑒 𝒹𝒶𝓉𝑒 💞 ", 450, 450);
+
+			ctx.font = "35px TimesNewRoman"
+			ctx.fillText("𝒟𝒶𝓎, 𝑀𝑜𝓃𝓉𝒽 𝒹𝒶𝓉𝑒, 𝒴𝑒𝒶𝓇", 450, 500);
+
+			ctx.font = "33px TimesNewRoman"
+			ctx.fillText("𝒯𝒽𝑒 𝒽𝑜𝓃𝑜𝓇 𝑜𝒻 𝓎𝑜𝓊𝓇 𝓅𝓇𝑒𝓈𝑒𝓃𝒸𝑒 𝒾𝓈 𝓇𝑒𝓆𝓊𝑒𝓈𝓉𝑒𝒹 𝒶𝓉 𝓉𝒽𝑒 𝒲𝑒𝒹𝒹𝒾𝓃𝑔.", 450, 550);
+
+			ctx.textAlign = "center"
+			ctx.font = "50px TimesNewRoman"
+			ctx.fillText("𝒱𝑒𝓃𝓊𝑒: ", 130, 610);
+
+			ctx.textAlign = "center"
+			ctx.font = "33px TimesNewRoman"
+			ctx.fillText("𝒜𝒹𝒹𝓇𝑒𝓈𝓈", 300, 610);
+
+			
+
+		};
+	</script>
+</body>
+</html>
